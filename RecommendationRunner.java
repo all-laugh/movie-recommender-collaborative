@@ -46,7 +46,7 @@ public class RecommendationRunner implements Recommender {
 		RaterDatabase.initialize( "ratings.csv" );
 		try {
 			ArrayList<Rating> similarRatings = ratings.getSimilarRatings( webRaterID, 20, 1 );
-			System.out.println("<h3>Here are your recommendations!</h3>");
+			System.out.println("<h3>Here are your recommendations! -- Made by Xiao Quan's recommender</h3>");
 			System.out.println( "<html><div class='lessons'><table>" );
 
 			for ( int i = 0; i < 10; i++ ) {
